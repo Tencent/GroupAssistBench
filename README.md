@@ -12,6 +12,7 @@
 <p align="center">
   📄 <a href="https://huggingface.co/papers/2611.04867">Paper on Hugging Face</a> |
   📄 <a href="https://arxiv.org/abs/2611.04867">arXiv Preprint</a> |
+  🤗 <a href="https://huggingface.co/datasets/tencent/GroupAssistBench">Dataset on Hugging Face</a> |
   🔥 <a href="https://zhanghao-groupassisbench.github.io/Academic-project-page-template/">Project Page</a>
 </p>
 
