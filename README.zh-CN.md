@@ -70,6 +70,7 @@ P1 接入群聊
 │   ├── items.jsonl           #   评测格式: 题面、L1 答案(gt/gt_atoms)、L2 评分项(criteria)、截断点
 │   ├── items_full.jsonl      #   同一批题的构造记录: 锚点、来源、事件簇、L1/L2 配对
 │   ├── contexts.json         #   脱敏后的群聊全文
+│   ├── contexts_en.json      #   contexts.json 的英文参考译文(机器翻译)
 │   ├── cutoffs.json          #   每题的截断轮次: 只能读这一轮之前的历史
 │   ├── manifest.json         #   2,395 个题号, 按群/层级/难度分桶
 │   ├── profiles.json         #   成员档案
@@ -92,10 +93,17 @@ P1 接入群聊
 │   ├── build_eval_bundle.py  # run 目录 → 评测包
 │   ├── sample_manifest.py    # 评测包 → 均衡子集
 │   └── audit_canonical.py    # 验收
-└── scripts/                  # 01–05 五个运行脚本 + 离线冒烟测试
+├── scripts/                  # 01–05 五个运行脚本 + 离线冒烟测试
+├── LICENSE_Code.txt          # 代码协议
+└── LICENSE_Dataset.txt       # 数据集协议(CC BY-NC 4.0)
 ```
 
 发言人均以 `user_N` 或人名形式的化名出现，已替换真实身份。
+
+**英文参考译文**：为保留真实对话的原貌，群聊数据的主体仍为中文原文；考虑到语言上的通用性，
+我们另外提供用 GPT-5.5 翻译的英文版群聊数据 `dataset/contexts_en.json`，供大家参考。
+`contexts.json` 仍是原始数据，`items.jsonl` 中的题目为中文。两个文件的结构、群名键、消息顺序和轮次号完全一致。
+请按位置对应消息，因为个别群内存在重复的轮次号。发言人姓名已转换为拼音。
 
 **术语对照**：代码中的 `difficulty` D1/D2/D3 对应论文的 M1/M2/M3（单条记忆 / 多条记忆 / 冲突记忆）；
 `layer` L1/L2 对应论文的记忆召回 / 记忆运用；`cut_turn` 即截断点。
@@ -193,6 +201,19 @@ python3 tools/audit_canonical.py <RUN_DIR>      # 验收一个 run 目录
 ```
 
 数据量很小的群可能因为某些 `层级 × 难度` 格为空而验收不通过，这时 03 会以非零状态退出，不代表运行出错。
+
+## 许可协议
+
+GroupAssistBench **仅限非商业用途**。代码和数据分别采用两份协议：
+
+| 部分 | 范围 | 协议 |
+|---|---|---|
+| 代码 | `pipeline/`、`tools/`、`scripts/`、`env.example`、`requirements.txt` | [License Terms of GroupAssistBench](LICENSE_Code.txt)：基于 MIT 条款，附加**仅限学术用途**的限制，不得用于任何商业或生产用途 |
+| 数据集 | `dataset/` 及 `demo/` 下的数据文件 | [CC BY-NC 4.0](LICENSE_Dataset.txt)：署名后可使用、分享和改编，**仅限非商业用途** |
+
+`assets/` 中的 logo 归各自所有者所有，不在上述协议范围内。
+
+Copyright (C) 2026 Tencent. All rights reserved.
 
 ## 引用
 
