@@ -51,7 +51,7 @@ The value of memory lies not only in recall but in using it to provide appropria
 ## Overview
 
 This repository contains the GroupAssistBench dataset and the code that turns group
-conversations into evaluation instances (Section 3.2 of the [paper](https://arxiv.org/abs/2611.04867)).
+conversations into evaluation instances.
 
 ```text
 P1  ingest the conversation
