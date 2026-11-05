@@ -1,0 +1,48 @@
+{
+ "built_at": "2026-11-03 21:13:43",
+ "builder": "tools/build_eval_bundle.py",
+ "source": "pipeline_runs/*/items.jsonl",
+ "filter": {
+  "status": "built",
+  "layer": "all",
+  "groups": "all"
+ },
+ "n_items": 25,
+ "per_group": {
+  "4368": {
+   "L2": 8,
+   "D1": 13,
+   "D2": 10,
+   "L1": 17,
+   "D3": 2
+  }
+ },
+ "skipped": {
+  "total": 28,
+  "kept": 25,
+  "skip_flagged": 3
+ },
+ "layer": {
+  "L2": 8,
+  "L1": 17
+ },
+ "difficulty": {
+  "D1": 13,
+  "D2": 10,
+  "D3": 2
+ },
+ "track": {
+  "jsonl": 25
+ },
+ "query_origin": {
+  "native": 9,
+  "authored": 16
+ },
+ "mem_span": {
+  "≤2": 3,
+  "3-20": 5,
+  ">20": 17,
+  "unknown": 0
+ },
+ "query_deduped": 0
+}

@@ -1,0 +1,59 @@
+{
+ "name": "GroupAssistBench final evaluation set",
+ "built_at": "2026-11-03 20:13:25",
+ "n_items": 2395,
+ "n_groups": 50,
+ "layer": {
+  "L1": 1374,
+  "L2": 1021
+ },
+ "difficulty": {
+  "D1": 997,
+  "D2": 1098,
+  "D3": 300
+ },
+ "cell": {
+  "L1D1": 776,
+  "L1D2": 448,
+  "L2D1": 221,
+  "L2D2": 650,
+  "L1D3": 150,
+  "L2D3": 150
+ },
+ "query_origin": {
+  "native": 1159,
+  "authored": 1236
+ },
+ "track": {
+  "jsonl": 864,
+  "xlsx": 1531
+ },
+ "d3v2_items": 153,
+ "files": {
+  "items.jsonl": "evaluation records (query, gt / gt_atoms / distractor_atoms for L1, criteria for L2, cut_idx, mem_span)",
+  "items_full.jsonl": "construction records of the same 2395 items: anchors (turn, fact, type, evidence), provenance, pos_turn/src_turn, event_id, pairing",
+  "contexts.json": "{group: [[turn, speaker, text], ...]} full anonymised conversation, text cut at 2000 chars",
+  "cutoffs.json": "{iid: cut_idx} a system may read only turns before this one (turn < cut_idx)",
+  "profiles.json": "{group: [{member, slot, fact, turn}, ...]} member profiles; entries with turn > 0 are extracted from the conversation and point to the turn that establishes them, entries with turn = 0 are member background information",
+  "manifest.json": "{\"<group>/<L>/<D>\": [iid, ...]} the 2395 ids bucketed by group, layer and difficulty"
+ },
+ "provenance": {
+  "base_items": {
+   "n": 2242,
+   "note": "selected from the step-04 pool of the 50 group runs (section 7 of the README)"
+  },
+  "d3v2_items": {
+   "n": 153,
+   "note": "cut_idx may be moved earlier than the construction record (fallback), never later"
+  }
+ },
+ "sha256": {
+  "items.jsonl": "5bbb1b5cad07a055ffe86a0d57113f90a53319bcb92e2cd6419c13e422cd75a2",
+  "items_full.jsonl": "4d9f12ee48061dfb920b1fb46e3db1de719fdcae56fcf479f01c0564542f6570",
+  "contexts.json": "c2644f10406fd8017d011a14a263a771700a34ed859fe1a846e829604de3b8a7",
+  "cutoffs.json": "1a7e6118f885a4c4f0ba303cd3cec6b9f5ac6fe309029ab6cbf7d2a18e21c6f9",
+  "profiles.json": "7d28a4217194103f5dc75ae4c2ffc1d9bd72e72224809bd4838f3cde410c2ab1",
+  "manifest.json": "4a60645f1e4a01b7591bf9001b4abb0106e54ee50b1e116a804f193d28bf69a4"
+ },
+ "annotator_ids": "human labels are recorded as anonymous ids (human:annotator_a / human:annotator_b)"
+}

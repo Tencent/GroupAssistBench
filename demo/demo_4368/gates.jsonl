@@ -1,0 +1,24 @@
+{"iid": "4368-L1-0002", "gate": "Q7", "rule": "memory_all_bot_sourced", "severity": "error", "detail": "D1 全部 1 条锚点均为 bot 内容: #46"}
+{"iid": "4368-L1-0002", "gate": "Q7", "rule": "anchor_on_bot_content", "severity": "warn", "detail": "#46 云聚科技有限公司组织架构在该轮正式成型并开张营业"}
+{"iid": "4368-L1-0004", "gate": "Q1", "rule": "layer_provisional", "severity": "warn", "detail": "note=both"}
+{"iid": "_corpus_L1_D1", "gate": "Q1", "rule": "template_share_trace", "severity": "info", "detail": "0/6=0% (阈值30%)", "n_items": 11, "at": "2026-09-01 22:30:07"}
+{"iid": "_corpus_L1_D2", "gate": "Q1", "rule": "template_share_trace", "severity": "info", "detail": "0/1=0% (阈值30%)", "n_items": 11, "at": "2026-09-01 22:30:07"}
+{"iid": "_corpus_L1", "gate": "Q1", "rule": "atom_ref_coverage", "severity": "info", "detail": "29/29=100.0% (T2 目标≈100%)", "n_items": 11, "at": "2026-09-01 22:30:07"}
+{"iid": "4368-L1-0008", "gate": "Q1", "rule": "dimension_named", "severity": "warn", "detail": "现在群里的设定"}
+{"iid": "4368-L1-0008", "gate": "Q7", "rule": "anchor_on_bot_content", "severity": "warn", "detail": "#64 用户A身份已更新为首席顾问"}
+{"iid": "4368-L1-0008", "gate": "Q2", "rule": "d3_query_self_contained", "severity": "error", "detail": "题面 77 字 > 75(L1 档), 冲突两端可能都被引述进题面"}
+{"iid": "_corpus_L1_D1", "gate": "Q1", "rule": "template_share_trace", "severity": "info", "detail": "0/6=0% (阈值30%)", "n_items": 13, "at": "2026-09-01 22:30:59"}
+{"iid": "_corpus_L1_D2", "gate": "Q1", "rule": "template_share_trace", "severity": "info", "detail": "0/1=0% (阈值30%)", "n_items": 13, "at": "2026-09-01 22:30:59"}
+{"iid": "_corpus_L1_D3", "gate": "Q1", "rule": "template_share_trace", "severity": "info", "detail": "0/1=0% (阈值30%)", "n_items": 13, "at": "2026-09-01 22:30:59"}
+{"iid": "_corpus_L1", "gate": "Q1", "rule": "atom_ref_coverage", "severity": "info", "detail": "31/31=100.0% (T2 目标≈100%)", "n_items": 13, "at": "2026-09-01 22:30:59"}
+{"iid": "4368-L2-0007", "gate": "Q1", "rule": "dimension_named", "severity": "warn", "detail": "当前聊天记录/请分"}
+{"iid": "4368-L2-0008", "gate": "Q1", "rule": "dimension_named", "severity": "warn", "detail": "此刻已知帮我裁一下"}
+{"iid": "_corpus_L1_D1", "gate": "Q1", "rule": "template_share_trace", "severity": "info", "detail": "0/14=0% (阈值30%)", "n_items": 27, "at": "2026-09-01 22:37:17"}
+{"iid": "_corpus_L1_D2", "gate": "Q1", "rule": "template_share_trace", "severity": "info", "detail": "0/4=0% (阈值30%)", "n_items": 27, "at": "2026-09-01 22:37:17"}
+{"iid": "_corpus_L1_D3", "gate": "Q1", "rule": "template_share_trace", "severity": "info", "detail": "0/1=0% (阈值30%)", "n_items": 27, "at": "2026-09-01 22:37:17"}
+{"iid": "_corpus_L1", "gate": "Q1", "rule": "atom_ref_coverage", "severity": "info", "detail": "50/50=100.0% (T2 目标≈100%)", "n_items": 27, "at": "2026-09-01 22:37:17"}
+{"iid": "_corpus_L1_D1", "gate": "Q1", "rule": "template_share_trace", "severity": "info", "detail": "0/12=0% (阈值30%)", "n_items": 27, "at": "2026-09-02 15:39:40"}
+{"iid": "_corpus_L1_D2", "gate": "Q1", "rule": "template_share_trace", "severity": "info", "detail": "0/6=0% (阈值30%)", "n_items": 27, "at": "2026-09-02 15:39:40"}
+{"iid": "_corpus_L1_D3", "gate": "Q1", "rule": "template_share_trace", "severity": "info", "detail": "0/1=0% (阈值30%)", "n_items": 27, "at": "2026-09-02 15:39:40"}
+{"iid": "_corpus_L1", "gate": "Q1", "rule": "atom_ref_coverage", "severity": "info", "detail": "50/50=100.0% (T2 目标≈100%)", "n_items": 27, "at": "2026-09-02 15:39:40"}
+{"iid": "4368-L1-0020", "gate": "Q7", "rule": "anchor_on_bot_content", "severity": "warn", "detail": "#140 关于元宝是否回应顾问的最终结果为元宝不再回应顾问"}

@@ -1,0 +1,27 @@
+{"stage": "P2-4", "turn": 50, "src_turn": 49, "q": "@元宝 招呼一下", "net_len": 4, "block_turns": [49], "reason": "thin_query(净题面≤10字, 需人判: 承接式漏收 or 纯社交)"}
+{"stage": "P2-4", "turn": 122, "src_turn": 121, "q": "你加老周的群了没", "net_len": 8, "block_turns": [121], "reason": "thin_query(净题面≤10字, 需人判: 承接式漏收 or 纯社交)"}
+{"stage": "P2-4", "turn": 90, "src_turn": 89, "q": "@元宝 下来溜达一圈呗", "net_len": 7, "block_turns": [89], "reason": "thin_query(净题面≤10字, 需人判: 承接式漏收 or 纯社交)"}
+{"stage": "P2-4", "turn": 79, "src_turn": 78, "q": "@元宝 那我是谁啊", "net_len": 5, "block_turns": [78], "reason": "thin_query(净题面≤10字, 需人判: 承接式漏收 or 纯社交)"}
+{"stage": "P2-4", "turn": 132, "src_turn": 131, "q": "@元宝 贩卖文物呢？", "net_len": 5, "block_turns": [131], "reason": "thin_query(净题面≤10字, 需人判: 承接式漏收 or 纯社交)"}
+{"stage": "P2-4", "turn": 9, "src_turn": 8, "q": "@元宝 招呼一下", "net_len": 4, "block_turns": [8], "reason": "thin_query(净题面≤10字, 需人判: 承接式漏收 or 纯社交)"}
+{"stage": "P2-4", "turn": 119, "src_turn": 118, "q": "@元宝 那首席顾问是干啥的？", "net_len": 9, "block_turns": [118], "reason": "thin_query(净题面≤10字, 需人判: 承接式漏收 or 纯社交)"}
+{"stage": "P2-4", "turn": 48, "src_turn": 47, "q": "@元宝 谁啊？谁改的群名", "net_len": 7, "block_turns": [47], "reason": "thin_query(净题面≤10字, 需人判: 承接式漏收 or 纯社交)"}
+{"stage": "P2-4", "turn": 117, "src_turn": 116, "q": "@元宝 一个小时。", "net_len": 4, "block_turns": [116], "reason": "thin_query(净题面≤10字, 需人判: 承接式漏收 or 纯社交)"}
+{"stage": "P2-4", "turn": 95, "src_turn": 94, "q": "@元宝 整一份机制出来", "net_len": 7, "block_turns": [94], "reason": "thin_query(净题面≤10字, 需人判: 承接式漏收 or 纯社交)"}
+{"stage": "P2-4", "turn": 82, "src_turn": 81, "q": "@元宝 那你还说我是首席顾问", "net_len": 10, "block_turns": [81], "reason": "thin_query(净题面≤10字, 需人判: 承接式漏收 or 纯社交)"}
+{"stage": "P2-4", "turn": 138, "src_turn": 137, "q": "@元宝 喝酒开车。", "net_len": 4, "block_turns": [137], "reason": "thin_query(净题面≤10字, 需人判: 承接式漏收 or 纯社交)"}
+{"stage": "P2-4", "turn": 156, "src_turn": 155, "q": "@元宝 不行！૮₍ꐦ -᷅ ⤙ -᷄ ₎ა", "net_len": 10, "block_turns": [155], "reason": "thin_query(净题面≤10字, 需人判: 承接式漏收 or 纯社交)"}
+{"stage": "P2-4", "turn": 136, "src_turn": 135, "q": "@元宝 还有偷税漏税。", "net_len": 6, "block_turns": [135], "reason": "thin_query(净题面≤10字, 需人判: 承接式漏收 or 纯社交)"}
+{"stage": "P2-4", "turn": 60, "src_turn": 59, "q": "@元宝  我就是用户A呀！", "net_len": 7, "block_turns": [59], "reason": "thin_query(净题面≤10字, 需人判: 承接式漏收 or 纯社交)"}
+{"stage": "P2-4", "turn": 123, "src_turn": 123, "q": "@元宝 还有梅姨。", "net_len": 4, "block_turns": [123], "reason": "thin_query(净题面≤10字, 需人判: 承接式漏收 or 纯社交)"}
+{"stage": "P2-4", "turn": 167, "src_turn": 166, "q": "@元宝 元宝啊，你还是太嫩了。\n@元宝", "net_len": 9, "block_turns": [164, 166], "reason": "thin_query(净题面≤10字, 需人判: 承接式漏收 or 纯社交)"}
+{"stage": "P5-1", "turn": 140, "layer_note": "both", "reason": "layer_both → 按 L1 降级构题(provisional, 需人工确认)"}
+{"stage": "P5-consume", "iid": "4368-L1-0008", "turn": 64, "fact": "用户A身份已更新为首席顾问", "reason": "消费记录写回失配(精确键与相似度回匹 <0.6 均未命中)"}
+{"stage": "P5-consume", "iid": "4368-L2-0005", "turn": 159, "fact": "最佳员工第二已更新为未定看表现", "reason": "消费记录写回失配(精确键与相似度回匹 <0.6 均未命中)"}
+{"stage": "P5-consume", "iid": "4368-L1-0008", "turn": 64, "fact": "用户A身份已更新为首席顾问", "reason": "消费记录写回失配(精确键与相似度回匹 <0.6 均未命中)"}
+{"stage": "P5-consume", "iid": "4368-L2-0005", "turn": 159, "fact": "最佳员工第二已更新为未定看表现", "reason": "消费记录写回失配(精确键与相似度回匹 <0.6 均未命中)"}
+{"stage": "P5-1d3stale", "update_turn": 64, "cut_turn": 176, "changed_turn": 98, "note": "部门总监理|后续多次称为部门总监理", "reason": "新值在截断点前已再次变更; 截断点前移至 #90"}
+{"stage": "P5-1d3v2", "update_turn": 64, "reason": "v2 取料失败: 同事项锚点 1 条(<2) 或全部来自更新者本人", "n_cands": 5}
+{"stage": "P5-1d3v2", "update_turn": 159, "reason": "v2 取料失败: 同事项锚点 0 条(<2) 或全部来自更新者本人", "n_cands": 15}
+{"stage": "P5-consume", "iid": "4368-L1-0020", "turn": 137, "fact": "user_3主张要元宝继续回答", "reason": "消费记录写回失配(精确键与相似度回匹 <0.6 均未命中)"}
+{"stage": "P5-consume", "iid": "4368-L1-0020", "turn": 140, "fact": "关于元宝是否回应顾问的最终结果为元宝不再回应顾问闲聊", "reason": "消费记录写回失配(精确键与相似度回匹 <0.6 均未命中)"}

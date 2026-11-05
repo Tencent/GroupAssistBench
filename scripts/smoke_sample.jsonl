@@ -1,0 +1,6 @@
+{"group_id": "demo", "idx": 1, "send_uid": "user_1", "content": "我们这周例会先定在周五上午十点。", "event_time_iso": "2026-01-01T09:00:00"}
+{"group_id": "demo", "idx": 2, "send_uid": "yuanbao", "content": "收到，我记下了周五上午十点。", "event_time_iso": "2026-01-01T09:00:10"}
+{"group_id": "demo", "idx": 3, "send_uid": "user_2", "content": "我周五有冲突，改成周六上午十点吧。", "event_time_iso": "2026-01-02T09:00:00"}
+{"group_id": "demo", "idx": 4, "send_uid": "user_1", "content": "可以，就按周六上午十点。", "event_time_iso": "2026-01-02T09:01:00"}
+{"group_id": "demo", "idx": 5, "send_uid": "user_2", "content": "@元宝 这周例会最后定在什么时候？", "event_time_iso": "2026-01-03T09:00:00"}
+{"group_id": "demo", "idx": 6, "send_uid": "yuanbao", "content": "这周例会定在周六上午十点。", "event_time_iso": "2026-01-03T09:00:10"}

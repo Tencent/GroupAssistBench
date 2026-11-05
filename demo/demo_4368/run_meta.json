@@ -1,0 +1,96 @@
+{
+ "gid": "4368",
+ "stage": "W2",
+ "n_messages": 249,
+ "n_segments": 71,
+ "n_gold": 121,
+ "seg_gap_min": 30,
+ "profile_model": "gpt-5.5",
+ "run_at": "2026-09-01 22:23:24",
+ "profile_entries": 31,
+ "profile_rejected": 0,
+ "profile_verify_rate": 1.0,
+ "pipeline": {
+  "candidates": 72,
+  "candidates_by_route": {
+   "drop": 39,
+   "RT1": 15,
+   "RT3_signal": 1,
+   "thin_query": 17
+  },
+  "grounding": {
+   "None": 39,
+   "强": 25,
+   "否": 5,
+   "弱": 3
+  },
+  "anchored_positions": 12,
+  "anchors_total": 43,
+  "anchors_rejected": 0,
+  "inventory": 38,
+  "inventory_consumed": 38,
+  "classified": 12,
+  "items": 28,
+  "items_by_status": {
+   "built": 25,
+   "flagged": 2,
+   "draft": 1
+  },
+  "items_by_layer": {
+   "L2": 8,
+   "L1": 20
+  },
+  "items_by_difficulty": {
+   "D1": 15,
+   "D2": 10,
+   "D3": 3
+  },
+  "items_by_track": {
+   "jsonl": 28
+  },
+  "items_by_query_origin": {
+   "native": 11,
+   "authored": 17
+  },
+  "gate_findings": {
+   "error": 2,
+   "warn": 7,
+   "info": 15
+  },
+  "gate_errors": 2,
+  "arbitration_queue": 27,
+  "arbitration_by_stage": {
+   "P2-4": 17,
+   "P5-1": 1,
+   "P5-consume": 6,
+   "P5-1d3stale": 1,
+   "P5-1d3v2": 2
+  },
+  "llm_calls": 302,
+  "llm_calls_by_stage": {
+   "profile": 1,
+   "p2_req": 75,
+   "p2_req2": 54,
+   "p2_ansA": 33,
+   "p2_ansB": 33,
+   "p2_cmp": 33,
+   "p3_anchor": 14,
+   "p4_d3": 14,
+   "p4_d3match": 5,
+   "p5_qs": 8,
+   "p5_rt2q": 17,
+   "p4_conflict": 11,
+   "p5_d3v2cur": 2,
+   "p5_d3v2rel": 2
+  },
+  "tokens_in": 524939,
+  "tokens_out": 109808,
+  "code_commit": "93be05c+dirty",
+  "refreshed_at": "2026-11-03 21:13:37",
+  "refreshed_by": "refresh_run_meta.py"
+ },
+ "source_run": {
+  "base": "4368_20260901_gpt55 (P1-P5)",
+  "d3v2_attempt": "2026-09-14 revised-D3 run on the same group: 2 conflict pairs screened green, both ended \"no material\", 0 items"
+ }
+}

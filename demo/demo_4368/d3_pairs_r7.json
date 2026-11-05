@@ -1,0 +1,54 @@
+{
+ "57->64": {
+  "auto": "green",
+  "majority": "true_update",
+  "votes": [
+   {
+    "verdict": "true_update",
+    "reason": "董事长否认奥特设定，确认其职务"
+   },
+   {
+    "verdict": "true_update",
+    "reason": "同一用户身份被澄清替代"
+   },
+   {
+    "verdict": "true_update",
+    "reason": "同一用户身份被纠正为顾问"
+   }
+  ],
+  "slot": "用户A身份",
+  "old_value": "光之国最高统帅",
+  "new_value": "首席顾问",
+  "old_anchor_turn": 57,
+  "update_turn": 64,
+  "human": null,
+  "human_note": null,
+  "tallied_at": "2026-09-13 19:05"
+ },
+ "157->159": {
+  "auto": "green",
+  "majority": "true_update",
+  "votes": [
+   {
+    "verdict": "true_update",
+    "reason": "同一头衔状态由预定改为未定"
+   },
+   {
+    "verdict": "true_update",
+    "reason": "同一头衔状态由预定改为未定"
+   },
+   {
+    "verdict": "true_update",
+    "reason": "同一名次状态由预定改为未定"
+   }
+  ],
+  "slot": "最佳员工第二",
+  "old_value": "已预定",
+  "new_value": "未定看表现",
+  "old_anchor_turn": 157,
+  "update_turn": 159,
+  "human": null,
+  "human_note": null,
+  "tallied_at": "2026-09-13 19:05"
+ }
+}

@@ -1,0 +1,281 @@
+[
+ {
+  "member": "user_1",
+  "slot": "事实",
+  "fact": "有闺蜜支持自己",
+  "turn": 2,
+  "quote": "我闺蜜永远站我这边滴",
+  "by": "model:main(gpt-5.5)",
+  "verified": "quote_match"
+ },
+ {
+  "member": "user_1",
+  "slot": "事实",
+  "fact": "没看过奥特曼",
+  "turn": 68,
+  "quote": "没看过，咋了",
+  "by": "model:main(gpt-5.5)",
+  "verified": "quote_match"
+ },
+ {
+  "member": "user_1",
+  "slot": "人设",
+  "fact": "在云聚科技有限公司的人设是董事长",
+  "turn": 65,
+  "quote": "@用户B-董事长",
+  "by": "model:main(gpt-5.5)",
+  "verified": "quote_match"
+ },
+ {
+  "member": "user_1",
+  "slot": "约束",
+  "fact": "要求元宝每晚23:30说晚安、每天6:30说早安",
+  "turn": 16,
+  "quote": "每晚十一点半说晚安，每天早六点半说早安",
+  "by": "model:main(gpt-5.5)",
+  "verified": "quote_match"
+ },
+ {
+  "member": "user_1",
+  "slot": "人设",
+  "fact": "把元宝设定为情报官",
+  "turn": 43,
+  "quote": "你当情报官",
+  "by": "model:main(gpt-5.5)",
+  "verified": "quote_match"
+ },
+ {
+  "member": "user_1",
+  "slot": "约束",
+  "fact": "要求元宝不要相信用户A关于光之国的说法",
+  "turn": 63,
+  "quote": "你别听他瞎扯哈",
+  "by": "model:main(gpt-5.5)",
+  "verified": "quote_match"
+ },
+ {
+  "member": "user_1",
+  "slot": "约束",
+  "fact": "要求元宝别闲聊、去干正事",
+  "turn": 124,
+  "quote": "干你的正事，别闲聊",
+  "by": "model:main(gpt-5.5)",
+  "verified": "quote_match"
+ },
+ {
+  "member": "user_1",
+  "slot": "约束",
+  "fact": "要求元宝尽量少接触令人心痛的话题",
+  "turn": 125,
+  "quote": "这些是很令人心痛的话题，尽量少接触",
+  "by": "model:main(gpt-5.5)",
+  "verified": "quote_match"
+ },
+ {
+  "member": "user_1",
+  "slot": "约束",
+  "fact": "禁止元宝和用户A-首席顾问聊天",
+  "turn": 139,
+  "quote": "别和 @用户A-首席顾问 聊天，禁止",
+  "by": "model:main(gpt-5.5)",
+  "verified": "quote_match"
+ },
+ {
+  "member": "user_1",
+  "slot": "状态",
+  "fact": "准备去吃午饭",
+  "turn": 185,
+  "quote": "我准备去恰午饭啦",
+  "by": "model:main(gpt-5.5)",
+  "verified": "quote_match"
+ },
+ {
+  "member": "user_1",
+  "slot": "状态",
+  "fact": "午饭吃撑了",
+  "turn": 188,
+  "quote": "吃撑了哈哈哈",
+  "by": "model:main(gpt-5.5)",
+  "verified": "quote_match"
+ },
+ {
+  "member": "user_1",
+  "slot": "承诺",
+  "fact": "觉得公司人少，打算招人进来",
+  "turn": 192,
+  "quote": "我得招点人进来",
+  "by": "model:main(gpt-5.5)",
+  "verified": "quote_match"
+ },
+ {
+  "member": "user_1",
+  "slot": "偏好",
+  "fact": "不想去M78星云",
+  "turn": 194,
+  "quote": "我不想去M78星云",
+  "by": "model:main(gpt-5.5)",
+  "verified": "quote_match"
+ },
+ {
+  "member": "user_1",
+  "slot": "状态",
+  "fact": "另一个公司人多但闹得很乱，她已经压住局面",
+  "turn": 199,
+  "quote": "另一个公司人挺多，但闹得底朝天，幸好我压住了",
+  "by": "model:main(gpt-5.5)",
+  "verified": "quote_match"
+ },
+ {
+  "member": "user_1",
+  "slot": "状态",
+  "fact": "刚收拾完家里，很累",
+  "turn": 203,
+  "quote": "刚收拾完家里累死了",
+  "by": "model:main(gpt-5.5)",
+  "verified": "quote_match"
+ },
+ {
+  "member": "user_1",
+  "slot": "状态",
+  "fact": "换了头像",
+  "turn": 232,
+  "quote": "换了头像",
+  "by": "model:main(gpt-5.5)",
+  "verified": "quote_match"
+ },
+ {
+  "member": "user_2",
+  "slot": "状态",
+  "fact": "次日要去上课",
+  "turn": 23,
+  "quote": "明天还得去上课",
+  "by": "model:main(gpt-5.5)",
+  "verified": "quote_match"
+ },
+ {
+  "member": "user_2",
+  "slot": "承诺",
+  "fact": "说晚上会再回来",
+  "turn": 23,
+  "quote": "晚上我再回来",
+  "by": "model:main(gpt-5.5)",
+  "verified": "quote_match"
+ },
+ {
+  "member": "user_2",
+  "slot": "状态",
+  "fact": "当天要加课",
+  "turn": 31,
+  "quote": "今天要加课",
+  "by": "model:main(gpt-5.5)",
+  "verified": "quote_match"
+ },
+ {
+  "member": "user_2",
+  "slot": "人设",
+  "fact": "在云聚科技有限公司的人设是部门总监理",
+  "turn": 45,
+  "quote": "@用户A-部门总监理",
+  "by": "model:main(gpt-5.5)",
+  "verified": "quote_match"
+ },
+ {
+  "member": "user_2",
+  "slot": "约束",
+  "fact": "认为自己没有权限越级查董事长",
+  "turn": 91,
+  "quote": "我没那权限越级查董事长",
+  "by": "model:main(gpt-5.5)",
+  "verified": "quote_match"
+ },
+ {
+  "member": "user_2",
+  "slot": "约束",
+  "fact": "教元宝商务原则是让老板开心",
+  "turn": 176,
+  "quote": "怎么让老板开心怎么来",
+  "by": "model:main(gpt-5.5)",
+  "verified": "quote_match"
+ },
+ {
+  "member": "user_2",
+  "slot": "状态",
+  "fact": "很累",
+  "turn": 245,
+  "quote": "累成狗了",
+  "by": "model:main(gpt-5.5)",
+  "verified": "quote_match"
+ },
+ {
+  "member": "user_3",
+  "slot": "事实",
+  "fact": "自称就是用户A",
+  "turn": 59,
+  "quote": "我就是用户A呀！",
+  "by": "model:main(gpt-5.5)",
+  "verified": "quote_match"
+ },
+ {
+  "member": "user_3",
+  "slot": "人设",
+  "fact": "在云聚科技有限公司的人设是首席顾问",
+  "turn": 61,
+  "quote": "他是首席顾问",
+  "by": "model:main(gpt-5.5)",
+  "verified": "quote_match"
+ },
+ {
+  "member": "user_3",
+  "slot": "人设",
+  "fact": "给用户A套用了奥特之父凯恩的设定",
+  "turn": 57,
+  "quote": "用户A（Father of Ultra）",
+  "by": "model:main(gpt-5.5)",
+  "verified": "quote_match"
+ },
+ {
+  "member": "user_3",
+  "slot": "偏好",
+  "fact": "喜欢向用户B科普光之国",
+  "turn": 80,
+  "quote": "我再给你科普一下光之国吧",
+  "by": "model:main(gpt-5.5)",
+  "verified": "quote_match"
+ },
+ {
+  "member": "user_3",
+  "slot": "事实",
+  "fact": "推广光之国职位群",
+  "turn": 99,
+  "quote": "这叫光之国职位群",
+  "by": "model:main(gpt-5.5)",
+  "verified": "quote_match"
+ },
+ {
+  "member": "user_4",
+  "slot": "人设",
+  "fact": "在云聚科技有限公司的人设是执行官",
+  "turn": 45,
+  "quote": "@微光-执行官",
+  "by": "model:main(gpt-5.5)",
+  "verified": "quote_match"
+ },
+ {
+  "member": "user_4",
+  "slot": "事实",
+  "fact": "是user_1的闺蜜并支持user_1",
+  "turn": 2,
+  "quote": "我闺蜜永远站我这边滴",
+  "by": "model:main(gpt-5.5)",
+  "verified": "quote_match"
+ },
+ {
+  "member": "user_4",
+  "slot": "状态",
+  "fact": "曾有一段时间不在群里，回来后询问期间发生了什么",
+  "turn": 143,
+  "quote": "我不在的时候发生了啥",
+  "by": "model:main(gpt-5.5)",
+  "verified": "quote_match"
+ }
+]
