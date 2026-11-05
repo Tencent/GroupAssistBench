@@ -51,7 +51,7 @@ The value of memory lies not only in recall but in using it to provide appropria
 ## Overview
 
 This repository contains the GroupAssistBench dataset and the code that turns group
-conversations into evaluation instances.
+conversations into evaluation instances (Section 3.2 of the [paper](https://arxiv.org/abs/2611.04867)).
 
 ```text
 P1  ingest the conversation
@@ -94,7 +94,9 @@ P1  ingest the conversation
 │   ├── build_eval_bundle.py  # run directories -> evaluation bundle
 │   ├── sample_manifest.py    # evaluation bundle -> balanced subset
 │   └── audit_canonical.py    # audit
-└── scripts/                  # the five run scripts (01-05) and an offline smoke test
+├── scripts/                  # the five run scripts (01-05) and an offline smoke test
+├── LICENSE_Code.txt          # license for the code
+└── LICENSE_Dataset.txt       # license for the dataset (CC BY-NC 4.0)
 ```
 
 Speakers appear as `user_N` or as personal-name pseudonyms; both replace the real identities.
@@ -208,6 +210,20 @@ python3 tools/audit_canonical.py <RUN_DIR>      # audit one run directory
 
 A very small group may fail the audit because some `layer × difficulty` cell is
 empty; step 03 then exits with a non-zero status, which does not mean the run is broken.
+
+## License
+
+GroupAssistBench is released for **non-commercial use only**. The code and the data are under
+two separate licenses:
+
+| Part | Covers | License |
+|---|---|---|
+| Code | `pipeline/`, `tools/`, `scripts/`, `env.example`, `requirements.txt` | [License Terms of GroupAssistBench](LICENSE_Code.txt): MIT-style terms with an added restriction to **academic use only**; commercial or production use is not permitted |
+| Dataset | `dataset/` and the data files under `demo/` | [CC BY-NC 4.0](LICENSE_Dataset.txt): use, share and adapt with attribution, **non-commercial purposes only** |
+
+The logos in `assets/` belong to their respective owners and are not covered by either license.
+
+Copyright (C) 2026 Tencent. All rights reserved.
 
 ## Citation
 
