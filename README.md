@@ -51,7 +51,7 @@ The value of memory lies not only in recall but in using it to provide appropria
 ## Overview
 
 This repository contains the GroupAssistBench dataset and the code that turns group
-conversations into evaluation instances (Section 3.2 of the [paper](https://arxiv.org/abs/2611.04867)).
+conversations into evaluation instances.
 
 ```text
 P1  ingest the conversation
@@ -72,6 +72,7 @@ P1  ingest the conversation
 │   ├── items.jsonl           #   evaluation form: query, L1 answer key (gt/gt_atoms), L2 rubric (criteria), cutoff
 │   ├── items_full.jsonl      #   construction records of the same instances: anchors, provenance, event cluster, L1/L2 pairing
 │   ├── contexts.json         #   the anonymised conversations
+│   ├── contexts_en.json      #   English reference translation of contexts.json (machine-translated)
 │   ├── cutoffs.json          #   per-instance cutoff: only turns before it may be read
 │   ├── manifest.json         #   the 2,395 ids bucketed by group / level / difficulty
 │   ├── profiles.json         #   member profiles
@@ -100,6 +101,14 @@ P1  ingest the conversation
 ```
 
 Speakers appear as `user_N` or as personal-name pseudonyms; both replace the real identities.
+
+**English reference translation.** To keep the conversations as they actually took
+place, the group chat data is kept in its original Chinese. To make the data accessible
+to a wider audience, we also provide `dataset/contexts_en.json`, an English version of
+`contexts.json` translated with GPT-5.5, for reference. `contexts.json` remains the
+original, and the instances in `items.jsonl` are in Chinese. The two files share the
+same structure, group keys, message order and turn numbers. Match messages by position,
+since a few turn numbers repeat within a group. Speaker names are romanised to pinyin.
 
 **Terminology.** In the code, `difficulty` D1/D2/D3 corresponds to M1/M2/M3 in the
 paper (single / multiple / conflicting memories); `layer` L1/L2 is memory recall /
