@@ -21,12 +21,12 @@
 <b>Research Collaboration</b>
 
 <p align="left">
-  <a href="https://bot.tencent.com/">
-    <img src="assets/bot.png" height="36" alt="Tencent bot">
+  <a href="https://yuanbao.tencent.com/">
+    <img src="assets/bot.png" height="36" alt="Tencent Yuanbao">
   </a>
   &nbsp;
-  <a href="https://bot.tencent.com/">
-    <b>Tencent bot Team</b>
+  <a href="https://yuanbao.tencent.com/">
+    <b>Tencent Yuanbao Team</b>
   </a>
 </p>
 

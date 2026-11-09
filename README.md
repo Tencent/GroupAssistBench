@@ -1,49 +1,25 @@
-<h1 align="center">GroupAssistBench</h1>
+# GroupAssistBench
 
-<h3 align="center">
-  One Assistant, Many Memories: Benchmarking Real-World Group Assistance When Recall Is Not Enough
-</h3>
+### One Assistant, Many Memories: Benchmarking Real-World Group Assistance When Recall Is Not Enough
 
-<p align="center">
-  Zhanghao Hu*, Linhai Zhang*, Qian Zhao, Qi Zhu, Yuan Hua,
-  Di Liang, Jiasheng Si, Xin Zhao, Yulan He, Zhumin Chen†, Lin Gui†
-</p>
+Zhanghao Hu*, Linhai Zhang*, Qian Zhao, Qi Zhu, Yuan Hua, Di Liang, Jiasheng Si, Xin Zhao, Yulan He, Zhumin Chen†, Lin Gui†
 
-<p align="center">
-  📄 <a href="https://huggingface.co/papers/2611.04867">Paper on Hugging Face</a> |
-  📄 <a href="https://arxiv.org/abs/2611.04867">arXiv Preprint</a> |
-  🤗 <a href="https://huggingface.co/datasets/tencent/GroupAssistBench">Dataset on Hugging Face</a> |
-  🔥 <a href="https://zhanghao-groupassisbench.github.io/Academic-project-page-template/">Project Page</a>
-</p>
+📄 [Paper on Hugging Face](https://huggingface.co/papers/2611.04867) | 📄 [arXiv Preprint](https://arxiv.org/abs/2611.04867) | 🤗 [Dataset on Hugging Face](https://huggingface.co/datasets/tencent/GroupAssistBench) | 🔥 [Project Page](https://zhanghao-groupassisbench.github.io/Academic-project-page-template/)
 
-<br>
+  
 
-<b>Research Collaboration</b>
 
-<p align="left">
-  <a href="https://bot.tencent.com/">
-    <img src="assets/bot.png" height="36" alt="Tencent bot">
-  </a>
-  &nbsp;
-  <a href="https://bot.tencent.com/">
-    <b>Tencent bot Team</b>
-  </a>
-</p>
+**Research Collaboration**
 
-<p align="left">
-  <a href="https://kclnlp.github.io/">
-    <img src="assets/kcl-nlp.png" height="36" alt="KCL NLP Group">
-  </a>
-  &nbsp;
-  <a href="https://kclnlp.github.io/">
-    <b>KCL NLP Group</b>
-  </a>
-  · King's College London
-</p>
+  **[Tencent Yuanbao Team](https://yuanbao.tencent.com/)**
+
+  **[KCL NLP Group](https://kclnlp.github.io/)** · King's College London
 
 > Chinese Version: [README.zh-CN.md](README.zh-CN.md).
 
 ---
+
+
 
 ## Introduction
 
@@ -63,6 +39,8 @@ P1  ingest the conversation
         anchors; conflicting-memory (D3) instances are built separately
  →  quality gates and audit
 ```
+
+
 
 ## 1. Contents
 
@@ -143,14 +121,16 @@ messages use `send_uid` `bot`.
 
 ## 4. Running
 
-| Step | Script | What it does | Calls a model |
-|---|---|---|---|
-| 01 | `01_run_base.sh` | P1–P5: locate requests, extract anchors, assign labels, build instances and D3 material | yes |
-| 02 | `02_screen_d3.sh` | vote three times on every D3 update event: green / yellow / red | yes |
-| 02b | (human) | optional review of yellow / red events | no |
-| 03 | `03_finalize_d3.sh` | build D3 instances and run the audit | yes |
-| 04 | `04_build_bundle.sh` | collect every group's valid instances (`status == "built"`) into an evaluation bundle | no |
-| 05 | `05_sample_manifest.sh` | select a balanced subset from the bundle | no |
+
+| Step | Script                  | What it does                                                                            | Calls a model |
+| ---- | ----------------------- | --------------------------------------------------------------------------------------- | ------------- |
+| 01   | `01_run_base.sh`        | P1–P5: locate requests, extract anchors, assign labels, build instances and D3 material | yes           |
+| 02   | `02_screen_d3.sh`       | vote three times on every D3 update event: green / yellow / red                         | yes           |
+| 02b  | (human)                 | optional review of yellow / red events                                                  | no            |
+| 03   | `03_finalize_d3.sh`     | build D3 instances and run the audit                                                    | yes           |
+| 04   | `04_build_bundle.sh`    | collect every group's valid instances (`status == "built"`) into an evaluation bundle   | no            |
+| 05   | `05_sample_manifest.sh` | select a balanced subset from the bundle                                                | no            |
+
 
 Steps 01–03 run per group and produce one run directory (`pipeline_runs/<RUN_DIR>/`);
 steps 04–05 work across groups. Every step reuses outputs already in the
@@ -163,8 +143,8 @@ messages) through every step and read each step's input and output.
 
 - Starting point: `demo/demo_4368_raw.jsonl` and `demo/demo_4368_annotations.jsonl`.
 - Result: `demo/demo_4368/`, the run directory of this group as used to build the
-  released dataset. All 19 released instances of the group are in its
-  `eval_bundle/items_adapted.jsonl`.
+released dataset. All 19 released instances of the group are in its
+`eval_bundle/items_adapted.jsonl`.
 
 To run it from scratch (needs an API key, about an hour):
 
@@ -226,10 +206,12 @@ empty; step 03 then exits with a non-zero status, which does not mean the run is
 GroupAssistBench is released for **non-commercial use only**. The code and the data are under
 two separate licenses:
 
-| Part | Covers | License |
-|---|---|---|
-| Code | `pipeline/`, `tools/`, `scripts/`, `env.example`, `requirements.txt` | [License Terms of GroupAssistBench](LICENSE_Code.txt): MIT-style terms with an added restriction to **academic use only**; commercial or production use is not permitted |
-| Dataset | `dataset/` and the data files under `demo/` | [CC BY-NC 4.0](LICENSE_Dataset.txt): use, share and adapt with attribution, **non-commercial purposes only** |
+
+| Part    | Covers                                                               | License                                                                                                                                                                  |
+| ------- | -------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Code    | `pipeline/`, `tools/`, `scripts/`, `env.example`, `requirements.txt` | [License Terms of GroupAssistBench](LICENSE_Code.txt): MIT-style terms with an added restriction to **academic use only**; commercial or production use is not permitted |
+| Dataset | `dataset/` and the data files under `demo/`                          | [CC BY-NC 4.0](LICENSE_Dataset.txt): use, share and adapt with attribution, **non-commercial purposes only**                                                             |
+
 
 The logos in `assets/` belong to their respective owners and are not covered by either license.
 
@@ -250,3 +232,4 @@ If you find GroupAssistBench useful, please cite:
       url={https://arxiv.org/abs/2611.04867},
 }
 ```
+
