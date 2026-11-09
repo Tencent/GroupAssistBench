@@ -24,7 +24,7 @@ MIN_STYLES = ('<?xml version="1.0" encoding="UTF-8" standalone="yes"?>'
               '<fonts count="1"><font/></fonts><fills count="1"><fill><patternFill patternType="none"/></fill></fills>'
               '<borders count="1"><border/></borders><cellStyleXfs count="1"><xf/></cellStyleXfs>'
               '<cellXfs count="1"><xf/></cellXfs></styleSheet>')
-SILVER_COLS = ('是否问元宝', '是否需要记忆功能', '是否拆分up', '主考察点1', '主考察点2', '主考察点3',
+SILVER_COLS = ('是否问bot', '是否需要记忆功能', '是否拆分up', '主考察点1', '主考察点2', '主考察点3',
                '能力（考点）', '难易程度')
 
 
@@ -109,7 +109,7 @@ def convert(path, gid, sheet_idx=0):
             dropped += 1
             continue
         msgs.append({'gid': gid, 'turn': t, 'who': who, 'text': text, 'ts': _iso(g(r, '时间')),
-                     'kind': 'bot' if '元宝' in who else 'text',
+                     'kind': 'bot' if 'bot' in who else 'text',
                      'reply_to': g(r, 'reply_to'), 'attachments': att,
                      'src': {'track': 'xlsx', 'file': os.path.basename(path), 'sheet': title, 'row': ri}})
         labels = {k: str(g(r, k)).strip() for k in SILVER_COLS if k in col and g(r, k) not in (None, '')}

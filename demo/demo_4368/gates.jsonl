@@ -21,4 +21,4 @@
 {"iid": "_corpus_L1_D2", "gate": "Q1", "rule": "template_share_trace", "severity": "info", "detail": "0/6=0% (阈值30%)", "n_items": 27, "at": "2026-09-02 15:39:40"}
 {"iid": "_corpus_L1_D3", "gate": "Q1", "rule": "template_share_trace", "severity": "info", "detail": "0/1=0% (阈值30%)", "n_items": 27, "at": "2026-09-02 15:39:40"}
 {"iid": "_corpus_L1", "gate": "Q1", "rule": "atom_ref_coverage", "severity": "info", "detail": "50/50=100.0% (T2 目标≈100%)", "n_items": 27, "at": "2026-09-02 15:39:40"}
-{"iid": "4368-L1-0020", "gate": "Q7", "rule": "anchor_on_bot_content", "severity": "warn", "detail": "#140 关于元宝是否回应顾问的最终结果为元宝不再回应顾问"}
+{"iid": "4368-L1-0020", "gate": "Q7", "rule": "anchor_on_bot_content", "severity": "warn", "detail": "#140 关于bot是否回应顾问的最终结果为bot不再回应顾问"}

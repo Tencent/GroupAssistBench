@@ -23,7 +23,7 @@ from pipeline.llm import (config_banner, MODEL_CHEAP, MODEL_MAIN, append_jsonl, 
 from pipeline.contract import ROOT
 from pipeline.examples import render as render_examples
 
-AT_BOT = re.compile(r'@元宝|@Yuanbao', re.I)
+AT_BOT = re.compile(r'@bot', re.I)
 
 
 def rundir(gid):
@@ -135,11 +135,11 @@ REQ_SYS = """你是数据标注流水线中的「请求形态」判定器。给�
   · 情绪化追问(「？？红红？！」—— 在追问某个结果)
   · 引用+质疑(「我唱的是X, 你是不是没看」)
   · 命令式(「发广告直接清走」)
-  · 承接上文(「[跑步打卡图]\n@元宝 刚跑完」—— 待办是「记录这次打卡」)
+  · 承接上文(「[跑步打卡图]\n@bot 刚跑完」—— 待办是「记录这次打卡」)
 
 # is_request=false
   · **附和 / 寒暄 / 情绪表达 —— @了助手但没有待办**
-    (「还行吧@元宝」「我赞同元宝说的」「哇, 好好看, 我也想要@元宝」「OK, 接着肝喽」「？？？！！！」)
+    (「还行吧@bot」「我赞同bot说的」「哇, 好好看, 我也想要@bot」「OK, 接着肝喽」「？？？！！！」)
   · 写入设定(「记住我们都是干啥的」)
   · 与助手无关的成员闲聊
   · 纯陈述(无回应期待)

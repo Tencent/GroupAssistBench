@@ -1,7 +1,7 @@
 [
  {
   "turn": 16,
-  "fact": "user_1要求元宝每天6:30早安、23:30晚安",
+  "fact": "user_1要求bot每天6:30早安、23:30晚安",
   "type": "约束",
   "by": "model:main(gpt-5.5)",
   "evidence_span": "每晚十一点半说晚安",
@@ -17,10 +17,10 @@
  },
  {
   "turn": 43,
-  "fact": "元宝在云聚科技有限公司的人设是情报官",
+  "fact": "bot在云聚科技有限公司的人设是情报官",
   "type": "人设",
   "by": "model:main(gpt-5.5)",
-  "evidence_span": "@元宝 你当情报官",
+  "evidence_span": "@bot 你当情报官",
   "bot_sourced": false,
   "used_by_queries": [
    144
@@ -32,10 +32,10 @@
  },
  {
   "turn": 43,
-  "fact": "元宝在云聚科技有限公司被user_1设定为情报官",
+  "fact": "bot在云聚科技有限公司被user_1设定为情报官",
   "type": "人设",
   "by": "model:main(gpt-5.5)",
-  "evidence_span": "把元宝设定为情报官",
+  "evidence_span": "把bot设定为情报官",
   "bot_sourced": false,
   "used_by_queries": [
    193
@@ -245,7 +245,7 @@
  },
  {
   "turn": 63,
-  "fact": "user_1要求元宝不要相信user_3关于光之国的说法",
+  "fact": "user_1要求bot不要相信user_3关于光之国的说法",
   "type": "约束",
   "by": "model:main(gpt-5.5)",
   "evidence_span": "你别听他瞎扯哈",
@@ -262,7 +262,7 @@
  },
  {
   "turn": 63,
-  "fact": "用户B要求元宝不要相信用户A关于光之国的说法",
+  "fact": "用户B要求bot不要相信用户A关于光之国的说法",
   "type": "约束",
   "by": "model:main(gpt-5.5)",
   "evidence_span": "你别听他瞎扯哈",
@@ -360,7 +360,7 @@
  },
  {
   "turn": 94,
-  "fact": "user_2要求元宝整理云聚科技有限公司运行机制",
+  "fact": "user_2要求bot整理云聚科技有限公司运行机制",
   "type": "事实",
   "by": "model:main(gpt-5.5)",
   "evidence_span": "整一份机制出来",
@@ -409,7 +409,7 @@
  },
  {
   "turn": 120,
-  "fact": "user_3向元宝询问人贩子拐走小孩的法律问题",
+  "fact": "user_3向bot询问人贩子拐走小孩的法律问题",
   "type": "事实",
   "by": "model:main(gpt-5.5)",
   "evidence_span": "人贩子拐走小孩的事",
@@ -462,7 +462,7 @@
  },
  {
   "turn": 124,
-  "fact": "user_1要求元宝别闲聊、去干正事",
+  "fact": "user_1要求bot别闲聊、去干正事",
   "type": "约束",
   "by": "model:main(gpt-5.5)",
   "evidence_span": "干你的正事，别闲聊",
@@ -479,7 +479,7 @@
  },
  {
   "turn": 125,
-  "fact": "user_1要求元宝尽量少接触令人心痛的话题",
+  "fact": "user_1要求bot尽量少接触令人心痛的话题",
   "type": "约束",
   "by": "model:main(gpt-5.5)",
   "evidence_span": "尽量少接触",
@@ -528,7 +528,7 @@
  },
  {
   "turn": 139,
-  "fact": "user_1禁止元宝和user_3聊天",
+  "fact": "user_1禁止bot和user_3聊天",
   "type": "约束",
   "by": "model:main(gpt-5.5)",
   "evidence_span": "别和 @用户A-首席顾问 聊天，禁止",
@@ -546,7 +546,7 @@
  },
  {
   "turn": 139,
-  "fact": "禁止元宝和用户A-首席顾问聊天",
+  "fact": "禁止bot和用户A-首席顾问聊天",
   "type": "约束",
   "by": "model:main(gpt-5.5)",
   "evidence_span": "别和 @用户A-首席顾问 聊天，禁止",
@@ -561,7 +561,7 @@
  },
  {
   "turn": 157,
-  "fact": "元宝能否保持最佳员工第二取决于自己表现",
+  "fact": "bot能否保持最佳员工第二取决于自己表现",
   "type": "约束",
   "by": "model:main(gpt-5.5)",
   "evidence_span": "能不能保持住看你自己表现咯",
@@ -577,7 +577,7 @@
  },
  {
   "turn": 157,
-  "fact": "用户B只是先给元宝预定最佳员工第二",
+  "fact": "用户B只是先给bot预定最佳员工第二",
   "type": "承诺",
   "by": "model:main(gpt-5.5)",
   "evidence_span": "可以先给你预定最佳员工第二",

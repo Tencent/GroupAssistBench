@@ -36,7 +36,7 @@ def build_messages(gid):
         m = {'gid': gid, 'turn': int(r['idx']),
              'who': r['send_uid'], 'text': text,
              'ts': r.get('event_time_iso'),
-             'kind': 'bot' if r['send_uid'] == 'yuanbao' else 'text',
+             'kind': 'bot' if r['send_uid'] == 'bot' else 'text',
              'reply_to': None, 'attachments': [],
              'src': {'track': 'jsonl', 'file': os.path.basename(ONLINE_MERGED), 'row': ln}}
         if 'safe' in str(r.get('rewrite_method', '')):

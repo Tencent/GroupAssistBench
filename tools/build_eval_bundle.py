@@ -111,7 +111,7 @@ def dedup_query_lines(q):
     lines = [x.strip() for x in (q or '').split('\n') if x.strip()]
     out = []
     for ln in lines:
-        if re.fullmatch(r'@?\s*元宝?\s*[，,]?\s*(抱歉|不好意思)[，,]?\s*(打错字了?|说错了?|口误)[。.！!]?', ln):
+        if re.fullmatch(r'@?\s*bot\s*[，,]?\s*(抱歉|不好意思)[，,]?\s*(打错字了?|说错了?|口误)[。.！!]?', ln):
             continue  # pure apology line
         if any(difflib.SequenceMatcher(None, ln, p).ratio() > 0.85 for p in out):
             continue  # near-duplicate of an earlier line

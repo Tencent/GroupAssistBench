@@ -29,7 +29,7 @@
  {
   "member": "user_1",
   "slot": "约束",
-  "fact": "要求元宝每晚23:30说晚安、每天6:30说早安",
+  "fact": "要求bot每晚23:30说晚安、每天6:30说早安",
   "turn": 16,
   "quote": "每晚十一点半说晚安，每天早六点半说早安",
   "by": "model:main(gpt-5.5)",
@@ -38,7 +38,7 @@
  {
   "member": "user_1",
   "slot": "人设",
-  "fact": "把元宝设定为情报官",
+  "fact": "把bot设定为情报官",
   "turn": 43,
   "quote": "你当情报官",
   "by": "model:main(gpt-5.5)",
@@ -47,7 +47,7 @@
  {
   "member": "user_1",
   "slot": "约束",
-  "fact": "要求元宝不要相信用户A关于光之国的说法",
+  "fact": "要求bot不要相信用户A关于光之国的说法",
   "turn": 63,
   "quote": "你别听他瞎扯哈",
   "by": "model:main(gpt-5.5)",
@@ -56,7 +56,7 @@
  {
   "member": "user_1",
   "slot": "约束",
-  "fact": "要求元宝别闲聊、去干正事",
+  "fact": "要求bot别闲聊、去干正事",
   "turn": 124,
   "quote": "干你的正事，别闲聊",
   "by": "model:main(gpt-5.5)",
@@ -65,7 +65,7 @@
  {
   "member": "user_1",
   "slot": "约束",
-  "fact": "要求元宝尽量少接触令人心痛的话题",
+  "fact": "要求bot尽量少接触令人心痛的话题",
   "turn": 125,
   "quote": "这些是很令人心痛的话题，尽量少接触",
   "by": "model:main(gpt-5.5)",
@@ -74,7 +74,7 @@
  {
   "member": "user_1",
   "slot": "约束",
-  "fact": "禁止元宝和用户A-首席顾问聊天",
+  "fact": "禁止bot和用户A-首席顾问聊天",
   "turn": 139,
   "quote": "别和 @用户A-首席顾问 聊天，禁止",
   "by": "model:main(gpt-5.5)",
@@ -191,7 +191,7 @@
  {
   "member": "user_2",
   "slot": "约束",
-  "fact": "教元宝商务原则是让老板开心",
+  "fact": "教bot商务原则是让老板开心",
   "turn": 176,
   "quote": "怎么让老板开心怎么来",
   "by": "model:main(gpt-5.5)",

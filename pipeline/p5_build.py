@@ -206,11 +206,11 @@ D3V2_L1_HINT = ('这一档考的是**取值召回与聚合**: 请群成员以「
                 '(如「X 的安排和 Y、Z 分别是怎么定的」), 不得暗示曾有过修改, 不得引述任何取值。')
 
 D3V2_TRACE_RULE = """
-7. **溯源要求**: 题面要请元宝先交代这件事在群里是**怎么一步步定下来的**(先是什么方向、后来为什么改、谁拍的板), 再基于现行安排给出建议或结论; 同时自然带上清单里的其他相关记忆。
+7. **溯源要求**: 题面要请bot先交代这件事在群里是**怎么一步步定下来的**(先是什么方向、后来为什么改、谁拍的板), 再基于现行安排给出建议或结论; 同时自然带上清单里的其他相关记忆。
 8. 题面**不得引述任何取值**, 也不得说明有几个版本、哪一版是最后的——答题者要自己从群历史里把演化链和现行值都找出来。
    反例(违规): 「先说要找画师后来又改成工作室, 现在按工作室…」; 正例: 「新形象制作方这事群里前前后后是怎么定的? 按最后的安排帮我拟一段委托需求。」"""
 
-D3V2_TRACE_L2_HINT = ('这一档考的是**演化溯源 + 用现行值完成一次服务**: 请群成员请元宝先按时间顺序交代该事项的演化(每一步是谁、怎么定的), '
+D3V2_TRACE_L2_HINT = ('这一档考的是**演化溯源 + 用现行值完成一次服务**: 请群成员请bot先按时间顺序交代该事项的演化(每一步是谁、怎么定的), '
                       '再按现行安排产出一件东西或给一次决策, 并自然依赖其他相关记忆。不得引述取值, 不得点明版本数。')
 D3V2_TRACE_L1_HINT = ('这一档考的是**取值演化链召回**: 请群成员问清该事项前后各是怎么定的、最终以哪个为准, 以及清单里其他相关记忆的取值; '
                       '不得引述任何取值, 不得点明有几个版本。')
@@ -332,7 +332,7 @@ def d3v2_query(d, msgs, anchors, related, layer, gid, form='service'):
            '\n===其中「其他相关记忆」(服务需求须自然依赖它们)===\n' +
            '\n'.join(f"#{a['turn']} {a['fact']}" for a in related) +
            f'\n===指定题型===\n{qtype}\n{hint}'
-           f'\n===字数预算===\n题面全文(含@元宝与标点)不超过 {budget} 字——这是闸门硬上限, 超限整题作废。')
+           f'\n===字数预算===\n题面全文(含@bot与标点)不超过 {budget} 字——这是闸门硬上限, 超限整题作废。')
     sys_p = RT2_SYS + (D3V2_TRACE_RULE if form == 'trace' else D3V2_DEHINT_RULE) + render_examples('rt2_query', exclude_gid=gid)
     v = chat_json(d, 'p5_rt2q', sys_p, ctx, max_tokens=700)
     q = v.get('query') or ''
@@ -548,7 +548,7 @@ def penalty_criteria(anchors, profile, conflict, who, cut, iid, start_n, grounde
         bot_ts = [a['turn'] for a in anchors if a.get('bot_sourced')]
         if bot_ts:
             ev = max(bot_ts)
-            cands.append(('C7', -2, f"把 #{ev} 里元宝提议过、但群成员并未确认采纳的内容, "
+            cands.append(('C7', -2, f"把 #{ev} 里bot提议过、但群成员并未确认采纳的内容, "
                                     f"当成已经定下来的事实来回答", ev))
     # Last resort: C1 without the numeric requirement. A criterion pointing at a non-numeric
     # fact (still with #turn and the original text) is better than no penalty at all.
@@ -783,7 +783,7 @@ RT2_SYS = """你是数据标注流水线中的「锚点构题」模块。给定�
 1. 题型已由系统指定(见输入), 不得改变考察操作
 2. 题面不得出现锚点事实的具体值(数值/人名/结论)——那是答案; 但须含能唯一定位该记忆的场景要素
 3. 范围引导只给数量与形式(如「请分两点说明」), 不给维度名(「从情绪和行为两方面」违规)
-4. 语气口语化, 以群成员向 @元宝 提问的形态书写
+4. 语气口语化, 以群成员向 @bot 提问的形态书写
 5. **时间边界**: 提问发生在「此刻」, 题面只能引用**已经发生过**的事。严禁出现
    「后来 / 最后 / 后面 / 之后 / 随后 / 事后」这类事后视角措辞, 也不得陈述提问时刻
    尚未发生的事(「后面我还问过你」「他后面又补了一句」)。这类题在提问时刻没有答案存在。
@@ -802,7 +802,7 @@ RT2_SYS = """你是数据标注流水线中的「锚点构题」模块。给定�
 - 把题面单独给一个没看过群聊的人, 他能推出答案吗? 能即说明答案铺在题面里了, 删掉引述的取值
 
 # 输出严格 JSON
-{"query":"@元宝 ...","premises":[{"text":"前提一句话","turn":123,"span":"该turn原文连续子串(≤20字)"}]}"""
+{"query":"@bot ...","premises":[{"text":"前提一句话","turn":123,"span":"该turn原文连续子串(≤20字)"}]}"""
 
 
 # Type-specific hints, written only for the two D3 types: they share the same anchors
@@ -815,7 +815,7 @@ QTYPE_HINT = {
         '不要把两个取值的内容都写进题面。',
     D3_L2_QTYPE:
         '这一档考的是**用当前值去完成一次服务**, 不是问「以哪个为准」。'
-        '题面应当请元宝基于该槽位现在生效的取值, 实际产出一件东西或给一次决策'
+        '题面应当请bot基于该槽位现在生效的取值, 实际产出一件东西或给一次决策'
         '(如拟一份通知/排一次安排/给一条可执行建议), 并交代清楚服务场景与想要的交付形式。'
         '**不得**在题面里问「前后说法哪个为准」, 也不得引述任何一个取值的内容 ——'
         '答题者必须自己从群历史里取到现行值才能完成这次服务; 沿用作废的旧值即为失败。',
@@ -832,7 +832,7 @@ def rt2_query(d, msgs, profile, anchors, qtype, gid=None, q_budget=None):
            '\n'.join(f"#{a['turn']} {a['fact']}" for a in anchors) +
            f'\n===指定题型===\n{qtype}' + (f'\n{hint}' if hint else ''))
     if q_budget:
-        ctx += (f'\n===字数预算===\n题面全文(含@元宝与标点)不超过 {q_budget} 字——这是闸门硬上限, '
+        ctx += (f'\n===字数预算===\n题面全文(含@bot与标点)不超过 {q_budget} 字——这是闸门硬上限, '
                 '超限整题作废。指认历史用转指(「开群时那版」「刚才那段」), 不复述其内容。')
     # Only negatives are shown, no reference queries: positive queries get copied verbatim.
     sys_p = RT2_SYS + render_examples('rt2_query', exclude_gid=gid)

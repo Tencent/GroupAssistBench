@@ -21,12 +21,12 @@
 <b>Research Collaboration</b>
 
 <p align="left">
-  <a href="https://yuanbao.tencent.com/">
-    <img src="assets/yuanbao.png" height="36" alt="Tencent Yuanbao">
+  <a href="https://bot.tencent.com/">
+    <img src="assets/bot.png" height="36" alt="Tencent bot">
   </a>
   &nbsp;
-  <a href="https://yuanbao.tencent.com/">
-    <b>Tencent Yuanbao Team</b>
+  <a href="https://bot.tencent.com/">
+    <b>Tencent bot Team</b>
   </a>
 </p>
 
@@ -124,10 +124,10 @@ cp env.example .env        # 填写 OPENAI_API_KEY, 必要时填写 OPENAI_BASE_
 ## 3. 输入格式
 
 **JSONL**：每行一条消息，至少包含 `group_id`、`idx`（群内递增序号）、`send_uid`、`content`，
-可选 `event_time_iso`。助手消息的 `send_uid` 为 `yuanbao`。
+可选 `event_time_iso`。助手消息的 `send_uid` 为 `bot`。
 
 ```json
-{"group_id": "demo", "idx": 1, "send_uid": "user_1", "content": "@元宝 帮我整理刚才确定的安排", "event_time_iso": "2026-01-01T10:00:00"}
+{"group_id": "demo", "idx": 1, "send_uid": "user_1", "content": "@bot 帮我整理刚才确定的安排", "event_time_iso": "2026-01-01T10:00:00"}
 ```
 
 **XLSX**：至少包含表头 `轮次`、`聊天记录-发言人`、`聊天记录-内容`，按表头名读取。

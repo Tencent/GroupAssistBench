@@ -21,12 +21,12 @@
 <b>Research Collaboration</b>
 
 <p align="left">
-  <a href="https://yuanbao.tencent.com/">
-    <img src="assets/yuanbao.png" height="36" alt="Tencent Yuanbao">
+  <a href="https://bot.tencent.com/">
+    <img src="assets/bot.png" height="36" alt="Tencent bot">
   </a>
   &nbsp;
-  <a href="https://yuanbao.tencent.com/">
-    <b>Tencent Yuanbao Team</b>
+  <a href="https://bot.tencent.com/">
+    <b>Tencent bot Team</b>
   </a>
 </p>
 
@@ -132,10 +132,10 @@ does not support JSON mode, set `FORCE_JSON=0`.
 
 **JSONL**: one message per line with at least `group_id`, `idx` (increasing within
 the group), `send_uid` and `content`; `event_time_iso` is optional. Assistant
-messages use `send_uid` `yuanbao`.
+messages use `send_uid` `bot`.
 
 ```json
-{"group_id": "demo", "idx": 1, "send_uid": "user_1", "content": "@元宝 please summarise what we just agreed on", "event_time_iso": "2026-01-01T10:00:00"}
+{"group_id": "demo", "idx": 1, "send_uid": "user_1", "content": "@bot please summarise what we just agreed on", "event_time_iso": "2026-01-01T10:00:00"}
 ```
 
 **XLSX**: at least the headers `轮次` (turn), `聊天记录-发言人` (speaker) and
