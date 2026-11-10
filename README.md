@@ -11,11 +11,26 @@ Zhanghao Hu*, Linhai Zhang*, Qian Zhao, Qi Zhu, Yuan Hua, Di Liang, Jiasheng Si,
 
 **Research Collaboration**
 
-  **[Tencent Yuanbao Team](https://yuanbao.tencent.com/)**
+<p align="left">
+  <a href="https://yuanbao.tencent.com/">
+    <img src="assets/yuanbao.png" height="36" alt="Tencent Yuanbao">
+  </a>
+  &nbsp;
+  <a href="https://yuanbao.tencent.com/">
+    <b>Tencent Yuanbao Team</b>
+  </a>
+</p>
 
-  **[KCL NLP Group](https://kclnlp.github.io/)** · King's College London
-
-> Chinese Version: [README.zh-CN.md](README.zh-CN.md).
+<p align="left">
+  <a href="https://kclnlp.github.io/">
+    <img src="assets/kcl-nlp.png" height="36" alt="KCL NLP Group">
+  </a>
+  &nbsp;
+  <a href="https://kclnlp.github.io/">
+    <b>KCL NLP Group</b>
+  </a>
+  · King's College London
+</p>
 
 ---
 
