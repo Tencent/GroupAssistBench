@@ -13,7 +13,7 @@ Zhanghao Hu*, Linhai Zhang*, Qian Zhao, Qi Zhu, Yuan Hua, Di Liang, Jiasheng Si,
 
 <p align="left">
   <a href="https://yuanbao.tencent.com/">
-    <img src="assets/yuanbao.png" height="36" alt="Tencent Yuanbao">
+    <img src="assets/bot.png" height="36" alt="Tencent Yuanbao">
   </a>
   &nbsp;
   <a href="https://yuanbao.tencent.com/">
